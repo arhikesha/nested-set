@@ -2,7 +2,7 @@
 class DbConn{
     const DNS = 'mysql:dbname=book;host=127.0.0.1';
     const USER = 'root';
-    const PASSWORD = 'kesha1991';
+    const PASSWORD = 'password';
     private $_db;
     static private $_instance;
 
