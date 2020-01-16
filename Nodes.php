@@ -242,7 +242,7 @@ class Nodes
         $this->conn->exec(" UPDATE task SET rgt = rgt - $this->skew_tree
                               WHERE rgt > $this->rgt_move AND rgt <= $this->rgt_near ");
         $this->conn->exec(
-                " UPDATE task SET lft = lft - $$this->skew_tree
+                " UPDATE task SET lft = lft - $this->skew_tree
                               WHERE lft > $this->rgt_move AND lft <= $this->rgt_near");
         $stmt = $this->conn->exec("UPDATE task SET lft =lft + $this->skew_edit ,
               rgt = rgt + $this->skew_edit  , lvl = lvl +  $this->skew_lvl WHERE id IN($this->id_edit)");
