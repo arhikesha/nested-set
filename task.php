@@ -5,10 +5,13 @@ require_once "Nodes.php";
 
 
 $task = new Nodes();
+ if(!empty($argv) ){
 
-$command = $argv[1];
-$id = $argv[2];
-$arg = $argv[3];
+      $command = $argv[1] ? $argv[1] : null;
+      $id = $argv[2] ? $argv[2] : null;
+      $arg = $argv[3] ? $argv[3] : null;
+  }
+
 
 switch ($command) {
     case 'addNode':
