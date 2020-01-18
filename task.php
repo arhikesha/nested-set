@@ -5,7 +5,7 @@ require_once "Nodes.php";
 
 
 $task = new Nodes();
- if(!empty($argv) ){
+ if(!empty($argv[1]) ){
 
       $command = $argv[1] ? $argv[1] : null;
       $id = $argv[2] ? $argv[2] : null;
