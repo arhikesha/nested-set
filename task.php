@@ -10,7 +10,9 @@ $task = new Nodes();
       $command = $argv[1] ? $argv[1] : null;
       $id = $argv[2] ? $argv[2] : null;
       $arg = $argv[3] ? $argv[3] : null;
-  }
+  }else{
+    return false;
+ }
 
 
 switch ($command) {
